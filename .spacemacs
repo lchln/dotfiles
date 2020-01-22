@@ -326,6 +326,9 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (require 'artbollocks-mode)
   (require 'erc-dcc)
+
+  (setq neo-show-hidden-files nil)
+
   (add-hook 'text-mode-hook 'artbollocks-mode)
   (add-hook 'json-mode-hook 'json-pretty-print)
   (add-hook 'erc-mode-hook 'erc-dcc-mode)
